@@ -11,3 +11,247 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* ===================================== */
+.container {
+  width: 1680px;
+  padding: 0 183px;
+}
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal; */
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.3;
+  /* or 60px */
+
+  letter-spacing: 0.03em;
+}
+
+.underlist-item {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal;  */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  /* identical to box height, or 120% */
+  letter-spacing: 0.08em;
+
+  color: #111518;
+  /* display: flex;
+align-items: center; */
+}
+
+/* 
+===================---header---====================== */
+.logo-top-left,
+.logo-top-right {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal;  */
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+
+  color: #111518;
+}
+
+.logo-bottom {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.25;
+  /* identical to box height */
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: #111518;
+}
+.logo-bottom-start {
+  color: #ff6b09;
+}
+.nav-list-link,
+.modal-btn {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.214;
+  /* identical to box height */
+
+  /* display: flex;
+  align-items: center;*/
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #b9b9b9;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: #ff6b09;
+}
+
+.modal-btn {
+  letter-spacing: 0.14em;
+  color: #ff6b09;
+  /* display: flex;
+  align-items: center; */
+}
+/* =====================---hero---===================== */
+.hero-container {
+  width: 1680px;
+  padding-left: 183px;
+  padding-right: 45px;
+}
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal; */
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 1.3;
+  /* or 75px */
+
+  letter-spacing: 0.03em;
+
+  color: #111518;
+}
+.slogan-first {
+  font-weight: 500;
+  color: #b9b9b9;
+}
+.slogan-end {
+  color: #ff6b09;
+}
+.hero-slogan {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.649;
+  /* or 33px */
+
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.08em;
+  color: #111518;
+}
+
+.hero-btn {
+  color: #ffffff;
+  background-color: #ff6b09;
+}
+/* ============================================== */
+
+/* ===================---benefit---======================= */
+.benefit-text {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.649;
+  /* or 33px */
+
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.08em;
+
+  color: #111518;
+}
+/* =======================---help---======================= */
+.help-title {
+  /* color: #FFFFFF; */
+}
+.help-span {
+  color: #ff6b09;
+}
+.underlist-item.top {
+  line-height: 1.649;
+  color: #ff6b09;
+}
+/* ======================---work---======================== */
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-list-item {
+  width: 425px;
+  margin-top: 20px;
+  padding: 40px 30px;
+  color: #ffffff;
+  background: #ffffff;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal;  */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  /* or 140% */
+
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #111518;
+}
+
+.card-item {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal;  */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.649;
+  /* or 33px */
+
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #ff6b09;
+}
+
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: normal;  */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
+
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #b9b9b9;
+}
+.work-list-item:hover,
+.work-list-item:focus {
+  color: #ffffff;
+  background-color: #ff6b09;
+}
+.work-list-item .card-title:hover,
+.work-list-item .card-item:hover,
+.work-list-item .card-text:hover,
+.work-list-item .card-title:focus,
+.work-list-item .card-item:focus,
+.work-list-item .card-text:focus {
+  color: #ffffff;
+}
+.card {
+  display: block;
+}
+.card:hover,
+.card:focus {
+  background-color: #ff6b09;
+  color: #ffffff;
+}
+/* ====================---program---========================== */
+/* ========================teacher======================= */
+/* ========================guarantee======================= */
+/* =========================Feedback====================== */
+/* ==========================registration===================== */
+/* =============================footer================== */

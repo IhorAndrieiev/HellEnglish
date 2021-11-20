@@ -6,82 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HellEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav>
-                <a href="/">
-                    <ul>
-                        <li>
-                            <b>Hell</b>
+            <nav class="navigation">
+                <a class="logo" href="/">
+                    <ul class="logo-top">
+                        <li class="logo-top-left">
+                            <b class="hell">Hell</b>
                         </li>
-                        <li>
-                            <img src="./images/header/logo.svg" alt="логотип" width="22" height="30">
+                        <li class="logo-top-middle">
+                            <img class="logo-img" src="./images/header/logo.svg" alt="логотип" width="22" height="30">
                         </li>
-                        <li>
-                            <b>EN</b>
+                        <li class="logo-top-right">
+                            <b class="en">EN</b>
                         </li>
                     </ul>
-                    <p><span>Адский</span> английский</p>
+                    <p class="logo-bottom">
+                        <span class="logo-bottom-start">Адский</span> английский
+                    </p>
                 </a>
-                <ul>
-                    <li>
-                        <a href="#">Программы обучения</a>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#">Программы обучения</a>
                     </li>
-                    <li>
-                        <a href="#">О нас</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#">О нас</a>
                     </li>
-                    <li>
-                        <a href="#">Варианты обучения</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#">Варианты обучения</a>
                     </li>
-                    <li>
-                        <a href="#">Контакты</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <button type="button">Консультация по телефону</button>
+            <button class="modal-btn" type="button">Консультация по телефону</button>
         </div>
     </header>
     <main>
         <!------------ Section HERO Секция герой ------------>
         <section class="hero">
-            <div class="container">
-                <div>
+            <div class="hero-container">
+                <div class="hero-left-side">
                     <h1 class="visually-hidden">Адский английский</h1>
-                    <h2>Комплексная подготовка к ВНО
+                    <h2 class="hero-title">Комплексная подготовка к ВНО
                         по английскому языку</h2>
-                    <p>
-                        <span>Просто не будет.</span>
+                    <p class="hero-slogan">
+                        <span class="slogan-first">Просто не будет.</span>
                         <br>
                         Но ты гарантировано наберешь
-                        <span>+25 баллов</span>
+                        <span class="slogan-end">+25 баллов</span>
                     </p>
-                    <button type="button">хочу на бесплатное занятие</button>
+                    <button class="hero-btn modal-btn" type="button">хочу на бесплатное занятие</button>
                 </div>
-                <div><img src="./images/hero/hero.jpg" alt="Учитель и ученицы сидят за столом" width="843" height="720">
+                <div class="hero-right-side">
+                    <img src="./images/hero/hero.jpg" alt="Учитель и ученицы сидят за столом" width="843" height="720">
                 </div>
             </div>
         </section>
         <!------------ Section Our advantages Секция Наши преимущества Section Our Benefits  ------------>
         <section class="benefit">
             <div class="container">
-                <ul>
-                    <li>
+                <ul class="benefit-list">
+                    <li class="benefit-list-item">
                         <div></div>
-                        <p>Адаптированная авторская
+                        <p class="benefit-text">Адаптированная авторская
                             программа ВНО</p>
                     </li>
-                    <li>
+                    <li class="benefit-list-item">
                         <div></div>
-                        <p>Современные
+                        <p class="benefit-text">Современные
                             методики обучения</p>
                     </li>
-                    <li>
+                    <li class="benefit-list-item">
                         <div></div>
-                        <p>Финансовая гарантия
+                        <p class="benefit-text">Финансовая гарантия
                             результата</p>
                     </li>
                 </ul>
@@ -90,47 +96,47 @@
         <!------------ Section Our help students Секция Наша помощь студентам   ------------>
         <section class="help">
             <div class="container">
-                <h2>Главные проблемы учеников
+                <h2 class="section-title help-title">Главные проблемы учеников
                     на English ВНО, которые
-                    мы <span>помогаем</span> решить</h2>
+                    мы <span class="help-span">помогаем</span> решить</h2>
                 <div>
-                    <ul>
-                        <li>
-                            <ul>
-                                <li>— 01</li>
-                                <li>Название грамматики</li>
+                    <ul class="help-list">
+                        <li class="help-list-item">
+                            <ul class="underlist">
+                                <li class="underlist-item top">— 01</li>
+                                <li class="underlist-item">Название грамматики</li>
                             </ul>
                         </li>
-                        <li>
-                            <ul>
-                                <li>— 02</li>
-                                <li>Неумение вомпринимать
+                        <li class="help-list-item">
+                            <ul class="underlist">
+                                <li class="underlist-item top">— 02</li>
+                                <li class="underlist-item">Неумение вомпринимать
                                     устную английскую речь</li>
                             </ul>
                         </li>
-                        <li>
-                            <ul>
-                                <li>— 03</li>
-                                <li>Скупой словарный запас
+                        <li class="help-list-item">
+                            <ul class="underlist">
+                                <li class="underlist-item top">— 03</li>
+                                <li class="underlist-item">Скупой словарный запас
                                     для написани сочинения</li>
                             </ul>
                         </li>
-                        <li>
-                            <ul>
-                                <li>— 04</li>
-                                <li>Поодготовка в одиночку</li>
+                        <li class="help-list-item">
+                            <ul class="underlist">
+                                <li class="underlist-item top">— 04</li>
+                                <li class="underlist-item">Поодготовка в одиночку</li>
                             </ul>
                         </li>
-                        <li>
-                            <ul>
-                                <li>— 05</li>
-                                <li>Отсутствие единого ресурса знаний</li>
+                        <li class="help-list-item">
+                            <ul class="underlist">
+                                <li class="underlist-item top">— 05</li>
+                                <li class="underlist-item">Отсутствие единого ресурса знаний</li>
                             </ul>
                         </li>
-                        <li>
-                            <ul>
-                                <li>— 06</li>
-                                <li>Недостатой самоорганизации и лень</li>
+                        <li class="help-list-item">
+                            <ul class="underlist">
+                                <li class="underlist-item top">— 06</li>
+                                <li class="underlist-item">Недостатой самоорганизации и лень</li>
                             </ul>
                         </li>
                     </ul>
@@ -140,54 +146,73 @@
         <!------------ Section our work Секция Наша работа ------------>
         <section class="work">
             <div class="container">
-                <h2>Как мы это делаем</h2>
-                <ul>
-                    <li>
-                        <div></div>
-                        <h3>Адаптированная программа
-                            подготовки к ВНО</h3>
-                        <p>—</p>
-                        <p>Ты будешь изучать грамматику и лексику одновременно. И ты научишься писать сочинения.</p>
+                <h2 class="section-title">Как мы это делаем</h2>
+                <ul class="work-list">
+                    <li class="work-list-item">
+                        <div class="card">
+                            <h3 class="card-title">Адаптированная программа
+                                подготовки к ВНО</h3>
+                            <p class="card-item">—</p>
+                            <p class="card-text">Ты будешь изучать грамматику и лексику одновременно. И ты научишься
+                                писать
+                                сочинения.</p>
+                        </div>
+
                     </li>
-                    <li>
-                        <div></div>
-                        <h3>Аудитория и онлайн-обучение</h3>
-                        <p>—</p>
-                        <p>Учитель поможет не только в аудитории, но и во время домашней подготовки.
-                            Родители могут участвовать в чате при желании.</p>
+                    <li class="work-list-item">
+                        <div class="card">
+                            <h3 class="card-title">Аудитория и онлайн-обучение</h3>
+                            <p class="card-item">—</p>
+                            <p class="card-text">Учитель поможет не только в аудитории, но и во время домашней
+                                подготовки.
+                                Родители могут участвовать в чате при желании.</p>
+                        </div>
+
                     </li>
-                    <li>
-                        <div></div>
-                        <h3>Привычка читать на английском языке</h3>
-                        <p>—</p>
-                        <p>Статьи из источников, которые используются при разработке настоящего ВНО, будут приходить на
-                            телефон дважды в неделю.
-                        </p>
+                    <li class="work-list-item">
+                        <div class="card">
+                            <h3 class="card-title">Привычка читать на английском языке</h3>
+                            <p class="card-item">—</p>
+                            <p class="card-text">Статьи из источников, которые используются при разработке настоящего
+                                ВНО,
+                                будут приходить на
+                                телефон дважды в неделю.
+                            </p>
+                        </div>
+
                     </li>
-                    <li>
-                        <div></div>
-                        <h3>Психологическая
-                            поддержка</h3>
-                        <p>—</p>
-                        <p>Мы научим тебя методикам прохождения тестирований, умению планировать свою подготовку
-                            уверенности
-                            в себе.</p>
+                    <li class="work-list-item">
+                        <div class="card">
+                            <h3 class="card-title">Психологическая
+                                поддержка</h3>
+                            <p class="card-item">—</p>
+                            <p class="card-text">Мы научим тебя методикам прохождения тестирований, умению планировать
+                                свою
+                                подготовку
+                                уверенности
+                                в себе.</p>
+                        </div>
+
                     </li>
-                    <li>
-                        <div></div>
-                        <h3>Обучение по авторским пособиям</h3>
-                        <p>—</p>
-                        <p>Тебе не нужно тратить время
-                            на самостоятельный поиск материала и ничего покупать дополнительно. Мы составили
-                            2 пособия для тебя.</p>
+                    <li class="work-list-item">
+                        <div class="card">
+                            <h3 class="card-title">Обучение по авторским пособиям</h3>
+                            <p class="card-item">—</p>
+                            <p class="card-text">Тебе не нужно тратить время
+                                на самостоятельный поиск материала и ничего покупать дополнительно. Мы составили
+                                2 пособия для тебя.</p>
+                        </div>
+
                     </li>
-                    <li>
-                        <div></div>
-                        <h3>Умение воспринимать устную английскуб речь</h3>
-                        <p>—</p>
-                        <p>“F.R.I.E.N.D.S” тебе не помогут. Ты будешь регулярно слушать
-                            и разбирать аудиозаписи
-                            в соответствии с изучаемой лексикой.</p>
+                    <li class="work-list-item">
+                        <div class="card">
+                            <h3 class="card-title">Умение воспринимать устную английскуб речь</h3>
+                            <p class="card-item">—</p>
+                            <p class="card-text">“F.R.I.E.N.D.S” тебе не помогут. Ты будешь регулярно слушать
+                                и разбирать аудиозаписи
+                                в соответствии с изучаемой лексикой.</p>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -195,7 +220,7 @@
         <!------------ Section our program description Секция описание нашей программы ------------>
         <section class="program">
             <div class="container">
-                <h2>Наша программа</h2>
+                <h2 class="section-title">Наша программа</h2>
                 <ul>
                     <li>
                         <h3>1 семестр</h3>
@@ -353,7 +378,7 @@
         <!------------ Section our teacher Секция наш Преподаватель ------------>
         <section class="teacher">
             <div class="container">
-                <h2>Преподаватель</h2>
+                <h2 class="section-title">Преподаватель</h2>
                 <div>
                     <div><img src="./images/teacher/DSC_0857 1.jpg" alt="фото преподователя"></div>
                     <div>
@@ -390,7 +415,7 @@
         <!------------ Section Our guarantee Секция Наши гарантии  ------------>
         <section class="guarantee">
             <div class="container">
-                <h2>Мы гарантируем</h2>
+                <h2 class="section-title">Мы гарантируем</h2>
                 <ul>
                     <li>
                         <p>Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном тестировании. Иначе мы вернем
@@ -415,7 +440,7 @@
         <!------------ Section Feedback from alumni Отзывы выпускников  ------------>
         <section class="feedback">
             <div class="container">
-                <h2>Отзывы выпускников</h2>
+                <h2 class="section-title">Отзывы выпускников</h2>
                 <div>
                     <div>
                         <img src="./images/feedback/card.jpg" alt="лицо" width="150" height="150">
@@ -437,33 +462,38 @@
             </div>
         </section>
         <!------------ Section registration Регистрация  ------------>
-        <section>
-            <div>
-                <h2>Регистрация на <span>бесплатную</span> телефонную <span>консультацию</span> по нюансам ЗНО
+        <section class="registration">
+            <div class="container">
+                <h2 class="section-title">Регистрация на <span>бесплатную</span> телефонную <span>консультацию</span> по
+                    нюансам ЗНО
                     по английскому языку</h2>
                 <p>Оставь заявку на участие в <span>бесплатном занятии.</span>
                     С вами свяжется консультант и ответит на вопросы</p>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <div><a href="/">
-                    <ul>
-                        <li>
-                            <b>Hell</b>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <a class="logo" href="/">
+                    <ul class="logo-top">
+                        <li class="logo-top-left">
+                            <b class="hell">Hell</b>
                         </li>
-                        <li>
-                            <img src="./images/header/logo.svg" alt="логотип" width="22" height="30">
+                        <li class="logo-top-middle">
+                            <img class="logo-img" src="./images/header/logo.svg" alt="логотип" width="22" height="30">
                         </li>
-                        <li>
-                            <b>EN</b>
+                        <li class="logo-top-right">
+                            <b class="en">EN</b>
                         </li>
                     </ul>
-                    <p><span>Адский</span> английский</p>
-                </a></div>
-            <div>
-                <a href="tel:+380000000000">+38 (000) 000 00 00</a>
+                    <p class="logo-bottom">
+                        <span class="logo-bottom-start">Адский</span> английский
+                    </p>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <a class="footer-tel" href="tel:+380000000000">+38 (000) 000 00 00</a>
             </div>
         </div>
         <div>
