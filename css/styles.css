@@ -1,3 +1,19 @@
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --accent-color: #ff6b09;
+  --white-color: #ffffff;
+  --main-color: #111518;
+  --second-color: #b9b9b9;
+  --black-color: #000000;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.649;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -11,120 +27,154 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* ===================================== */
+/* ========================---COMPONENTS---============================ */
 .container {
   width: 1680px;
   padding: 0 183px;
 }
 .section-title {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal; */
   font-weight: 800;
   font-size: 46px;
   line-height: 1.3;
   /* or 60px */
-
   letter-spacing: 0.03em;
 }
 .title-white {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .title-span {
-  color: #ff6b09;
+  color: var(--accent-color);
 }
 
-.subsection-underlist-item {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  /* identical to box height, or 120% */
+.subsection-underlist-item,
+.hero-slogan,
+.benefit-text,
+.work-card-title,
+.work-card-item,
+.program-title,
+.program-undertitle,
+.teacher-text-top {
   letter-spacing: 0.08em;
-
-  color: #111518;
+  color: var(--main-color);
   /* display: flex;
 align-items: center; */
 }
+.subsection-underlist-item {
+  line-height: 1.2;
+}
 
-.subsection-underlist-item.top {
-  line-height: 1.649;
-  color: #ff6b09;
+.subsection-underlist-item.top,
+.program-undertitle,
+.teacher-text-top,
+.work-card-item {
+  color: var(--accent-color);
+}
+
+.registration-text,
+.footer-tel {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.233;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.work-card-text,
+.program-text,
+.teacher-text,
+.teacher-link,
+.feedback-text,
+.feetback-undertitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
+  letter-spacing: 0.08em;
+
+  color: var(--second-color);
 }
 
 .subsection-box {
-  background-color: #ffffff;
-}
-/* 
-===================---header---====================== */
-.logo-top-left,
-.logo-top-right {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1.23;
-  /* identical to box height */
-
-  letter-spacing: 0.04em;
-
-  color: #111518;
+  background-color: var(--white-color);
 }
 
-.logo-bottom {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal; */
-  font-weight: 700;
-  font-size: 8px;
-  line-height: 1.25;
-  /* identical to box height */
-
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-
-  color: #111518;
-}
-.logo-bottom-start {
-  color: #ff6b09;
-}
-.nav-list-link,
 .modal-btn {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal; */
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.214;
   /* identical to box height */
 
   /* display: flex;
+  align-items: center; */
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* ========================---END COMPONENTS---============================ */
+
+/* ===================---HEADER---====================== */
+.logo-top-left,
+.logo-top-right {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+
+  color: var(--main-color);
+}
+
+.logo-bottom {
+  font-size: 8px;
+  line-height: 1.25;
+  /* identical to box height */
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--main-color);
+}
+.logo-bottom-start {
+  color: var(--accent-color);
+}
+.nav-list-link {
+  font-size: 14px;
+  line-height: 1.214;
+  /* identical to box height */
+  /* display: flex;
   align-items: center;*/
   text-align: center;
   text-transform: uppercase;
 
-  color: #b9b9b9;
+  color: var(--second-color);
 }
 
 .nav-list-link:hover,
 .nav-list-link:focus {
-  color: #ff6b09;
+  color: var(--accent-color);
 }
+.header-btn {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+  cursor: pointer;
+}
+.header-btn:hover,
+.header-btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+/* ======================--- END HEADER---====================== */
 
-.modal-btn {
-  letter-spacing: 0.14em;
-  color: #ff6b09;
-  /* display: flex;
-  align-items: center; */
-}
-/* =====================---hero---===================== */
+/* =====================---HERO---===================== */
 .hero-container {
   width: 1680px;
   padding-left: 183px;
   padding-right: 45px;
 }
 .hero-title {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal; */
   font-weight: 800;
   font-size: 58px;
   line-height: 1.3;
@@ -132,57 +182,36 @@ align-items: center; */
 
   letter-spacing: 0.03em;
 
-  color: #111518;
+  color: var(--main-color);
 }
 .slogan-first {
   font-weight: 500;
-  color: #b9b9b9;
+  color: var(--second-color);
 }
 .slogan-end {
-  color: #ff6b09;
-}
-.hero-slogan {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal; */
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.649;
-  /* or 33px */
-
-  /* display: flex;
-  align-items: center; */
-  letter-spacing: 0.08em;
-  color: #111518;
+  color: var(--accent-color);
 }
 
-.hero-btn {
-  color: #ffffff;
-  background-color: #ff6b09;
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+  cursor: pointer;
 }
-/* ============================================== */
+/* ======================---END hero---======================== */
 
 /* ===================---benefit---======================= */
-.benefit-text {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal; */
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.649;
-  /* or 33px */
 
-  /* display: flex;
-  align-items: center; */
-  letter-spacing: 0.08em;
+/* =======================---END benefit---======================= */
 
-  color: #111518;
-}
 /* =======================---help---======================= */
 .help .container {
-  background-color: #000000;
+  background-color: var(--black-color);
 }
+/* =======================---END help---======================= */
 
 /* ======================---work---======================== */
-.work-list {
+/* .work-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -193,197 +222,101 @@ align-items: center; */
   color: #ffffff;
   background: #ffffff;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-}
-.card-title {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 700;
-  font-size: 20px;
+} */
+.work-card-title {
   line-height: 1.4;
-  /* or 140% */
-
   text-align: center;
-  letter-spacing: 0.08em;
-
-  color: #111518;
 }
 
-.card-item {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.649;
-  /* or 33px */
-
-  /* display: flex;
-  align-items: center; */
+.work-card-item {
   text-align: center;
-  letter-spacing: 0.08em;
-
-  color: #ff6b09;
 }
 
-.card-text {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.56;
-  /* or 156% */
-
+.work-card-text {
   text-align: center;
-  letter-spacing: 0.08em;
-
-  color: #b9b9b9;
 }
+
 .work-list-item:hover,
 .work-list-item:focus {
-  color: #ffffff;
-  background-color: #ff6b09;
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
-.work-list-item .card-title:hover,
-.work-list-item .card-item:hover,
-.work-list-item .card-text:hover,
-.work-list-item .card-title:focus,
-.work-list-item .card-item:focus,
-.work-list-item .card-text:focus {
+/* .work-list-item .work-card-title:hover,
+.work-list-item .work-card-item:hover,
+.work-list-item .work-card-text:hover,
+.work-list-item .work-card-title:focus,
+.work-list-item .work-card-item:focus,
+.work-list-item .work-card-text:focus {
   color: #ffffff;
-}
-.card {
+} */
+/* .work-card {
   display: block;
 }
-.card:hover,
-.card:focus {
+.work-card:hover,
+.work-card:focus {
   background-color: #ff6b09;
   color: #ffffff;
-}
+} */
+
+/* =======================---END work---======================= */
+
 /* ====================---program---========================== */
 .program .container {
-  background-color: #000000;
+  background-color: var(--black-color);
 }
 .program-title {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 700;
-  font-size: 20px;
   line-height: 1.4;
-  /* identical to box height, or 140% */
-
-  letter-spacing: 0.08em;
   text-transform: uppercase;
-
-  color: #ffffff;
+  color: var(--white-color);
 }
-.program-undertitle {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.649;
-  /* or 33px */
 
-  /* display: flex;
-align-items: center; */
-  letter-spacing: 0.08em;
-
-  color: #ff6b09;
-}
 .program-text {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.556;
-  /* or 156% */
-
-  letter-spacing: 0.08em;
-
-  color: #b9b9b9;
-
   opacity: 0.5;
 }
-/* ========================teacher======================= */
+/* ====================---END program---========================== */
+
+/* ========================---teacher---======================= */
 .teacher-title {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
   font-weight: 800;
   font-size: 30px;
   line-height: 1.233;
   /* identical to box height */
-
   letter-spacing: 0.08em;
 
-  color: #111518;
+  color: var(--main-color);
 }
 
 .teacher-list-item {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.06em;
 
-  color: #111518;
-}
-
-.teacher-text-top {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.649;
-  /* identical to box height, or 33px */
-
-  /* display: flex;
-align-items: center; */
-  letter-spacing: 0.08em;
-
-  color: #ff6b09;
-}
-
-.teacher-text {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.556;
-  /* or 156% */
-
-  color: #b9b9b9;
+  color: var(--main-color);
 }
 
 .teacher-link {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.556;
-  /* or 156% */
   text-decoration-line: underline;
-
-  color: #ff6b09;
+  color: var(--accent-color);
 }
-/* ========================guarantee======================= */
+/* ========================---END teacher---======================= */
+
+/* ========================---guarantee---======================= */
 .guarantee-text {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
   /* or 140% */
-
   color: #3d3d3d;
 }
 
 .guarantee-text-span {
-  color: #ff6b09;
+  color: var(--accent-color);
 }
-/* =========================Feedback====================== */
+/* ========================---END guarantee---======================= */
+
+/* =========================---Feedback---====================== */
 .feedback-title {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
   font-weight: 800;
   font-size: 30px;
   line-height: 1.233;
@@ -391,73 +324,42 @@ align-items: center; */
 
   letter-spacing: 0.08em;
 
-  color: #ff6b09;
+  color: var(--accent-color);
 }
 .feetback-undertitle {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.214;
-  letter-spacing: 0.08em;
-
-  color: #b9b9b9;
 }
 .feedback-text {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.556;
-  /* or 156% */
-
   color: #3d3d3d;
 }
 .feedback-text-link {
-  color: #ff6b09;
+  color: var(--accent-color);
 }
-/* ==========================registration===================== */
+/* =========================---END Feedback---====================== */
+
+/* ==========================---registration---===================== */
 .registration .container {
-  background-color: #000000;
+  background-color: var(--black-color);
 }
 .registration-text {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 1.233;
-  text-align: center;
-  letter-spacing: 0.08em;
-
-  color: #ffffff;
+  color: var(--white-color);
 }
-/* =============================footer================== */
+/* ==========================---END registration---===================== */
+
+/* =============================---footer---================== */
 .footer-tel {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 1.233;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.08em;
-
-  color: #111518;
+  color: var(--main-color);
 }
 .copyright {
-  font-family: "Montserrat", sans-serif;
-  /* font-style: normal;  */
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
-  /* or 200% */
-
   /* display: flex;
 align-items: center; */
-
-  color: #b9b9b9;
+  color: var(--second-color);
 }
 .footer-container {
-  background-color: #111518;
+  background-color: var(--main-color);
 }
+/* =============================---END footer---================== */
