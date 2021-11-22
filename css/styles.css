@@ -14,6 +14,35 @@ body {
   line-height: 1.649;
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -27,11 +56,14 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* ========================---COMPONENTS---============================ */
+
 .container {
   width: 1680px;
   padding: 0 183px;
+  margin: 0 auto;
 }
+/* ========================---COMPONENTS---============================ */
+
 .section-title {
   font-weight: 800;
   font-size: 46px;
@@ -100,6 +132,10 @@ align-items: center; */
 }
 
 .modal-btn {
+  min-width: 354px;
+  height: 70px;
+  padding: 26px 26px;
+
   font-size: 14px;
   line-height: 1.214;
   /* identical to box height */
@@ -116,6 +152,38 @@ align-items: center; */
 /* ========================---END COMPONENTS---============================ */
 
 /* ===================---HEADER---====================== */
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logo-top {
+  display: flex;
+  align-items: center;
+}
+
+.container .logo {
+  margin-right: 144px;
+  outline: 2px solid tomato;
+}
+
+.nav-list {
+  display: flex;
+  outline: 2px solid tomato;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .logo-top-left,
 .logo-top-right {
   font-weight: 800;
@@ -155,11 +223,20 @@ align-items: center; */
 .nav-list-link:focus {
   color: var(--accent-color);
 }
+
 .header-btn {
+  min-width: 335.49px;
+  height: 70px;
+  padding: 26px 22px;
+  /* margin-left: 60px; */
+  margin-left: auto;
+  border: 2px solid #ff6b09;
+
   color: var(--accent-color);
   background-color: var(--white-color);
   cursor: pointer;
 }
+
 .header-btn:hover,
 .header-btn:focus {
   color: var(--white-color);
@@ -192,11 +269,15 @@ align-items: center; */
   color: var(--accent-color);
 }
 
+.hero-btn {
+  margin-top: 40px;
+}
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--accent-color);
   background-color: var(--white-color);
   cursor: pointer;
+  border: 2px solid #ff6b09;
 }
 /* ======================---END hero---======================== */
 
