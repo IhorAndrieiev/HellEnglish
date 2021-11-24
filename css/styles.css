@@ -58,6 +58,7 @@ img {
 }
 
 .container {
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
   width: 1680px;
   padding: 0 183px;
   margin: 0 auto;
@@ -133,9 +134,9 @@ align-items: center; */
 }
 
 .modal-btn {
-  min-width: 354px;
-  height: 70px;
-  padding: 26px 26px;
+  /* min-width: 354px;
+  height: 70px; */ /* размер  задавать кнопкам не нужно чтоб не было переполнение текстом*/
+  padding: 26px 25px;
 
   font-size: 14px;
   line-height: 1.214;
@@ -146,6 +147,7 @@ align-items: center; */
   text-align: center;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  border: 2px solid #ff6b09;
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -156,32 +158,32 @@ align-items: center; */
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
 }
 .header .container {
   display: flex;
   align-items: center;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 }
 .logo-top {
   display: flex;
   align-items: center;
 }
 
-.container .logo {
+.header .logo {
   margin-right: 144px;
-  outline: 2px solid purple;
+  /* outline: 2px solid purple; */
 }
 
 .nav-list {
   display: flex;
-  outline: 2px solid purple;
+  /* outline: 2px solid purple; */
 }
 
 .nav-list-item:not(:last-child) {
@@ -229,9 +231,9 @@ align-items: center; */
 }
 
 .header-btn {
-  min-width: 335.49px;
-  height: 70px;
-  padding: 26px 22px;
+  /* min-width: 335.49px;
+  height: 70px; */ /* размер задавать кнопкам не нужно чтоб не было переполнение текстом*/
+  padding: 26px 23px;
   /* margin-left: 60px; */
   margin-left: auto;
   border: 2px solid #ff6b09;
@@ -255,8 +257,8 @@ align-items: center; */
 .hero {
   display: flex;
   align-items: flex-end;
-  height: 878px;
-  outline: 2px solid green;
+  min-height: 878px; /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  /* outline: 2px solid green; */
 }
 .hero-container {
   display: flex;
@@ -282,6 +284,7 @@ align-items: center; */
 }
 
 .hero-slogan {
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
   width: 540px;
   /* height: 66px; */
   margin-top: 24px;
@@ -333,17 +336,20 @@ align-items: center; */
   display: flex;
   align-items: center;
   width: 448px;
-  height: 102px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  min-height: 102px;
   /* outline: 2px solid violet; */
 }
 .benefit-box {
   width: 100px;
-  height: 102px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  min-height: 102px;
   /* outline: 2px solid violet; */
 }
 
 .benefit-text {
   margin-left: -18px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
   width: 366px;
   padding: 8 0;
   /* outline: 2px solid tomato; */
@@ -352,25 +358,31 @@ align-items: center; */
 
 /* =======================---help---======================= */
 .help {
-  min-height: 710px;
+  min-height: 710px; /*фиксированный размер не задаём в случае добавления текста он будет менятся*/
+  margin-bottom: 130px;
   /* outline: 2px solid green; */
 }
 .help .container {
-  height: 560px;
+  /*???фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  height: 560px; /*?????????*/
   padding-top: 100px;
-  padding-bottom: 282px;
+  /* padding-bottom: 282px; */
   background-color: var(--black-color);
   /* outline: 2px solid tomato; */
 }
 .help-title-box {
   width: 866px;
-  /*height: 178px; */
+  /* min-height: 178px; */
   margin-bottom: 70px;
   /* outline: 2px solid blue; */
 }
+.help .section-title {
+  margin-bottom: 70px;
+}
 .help-subsection-box {
   width: 1314px;
-  height: 362px;
+  /* min-height: 362px;  */
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
   margin-bottom: 130px;
   box-shadow: 0px 8px 26px rgba(157, 30, 30, 0.1);
   /* width: 1680px; */
@@ -381,6 +393,7 @@ align-items: center; */
   flex-wrap: wrap;
   padding-top: 54px;
   padding-left: 94px;
+  padding-bottom: 46px;
 
   /* outline: 2px solid violet; */
 }
@@ -400,9 +413,12 @@ align-items: center; */
 /* =======================---END help---======================= */
 
 /* ======================---work---======================== */
+.work {
+  margin-bottom: 130px;
+}
 .work .container {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   /* outline: 2px solid tomato; */
 }
 
@@ -491,10 +507,12 @@ align-items: center; */
 
 /* ====================---program---========================== */
 .program {
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
   min-height: 1436px;
 }
 .program .container {
-  height: 1237px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  height: 1237px; /*???????*/
   padding-top: 120px;
   background-color: var(--main-color);
 }
@@ -544,7 +562,8 @@ align-items: center; */
 
 .program-subsection-box {
   width: 1314px;
-  height: 398px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  min-height: 398px;
   margin-top: -140px;
   margin-bottom: 130px;
 
@@ -557,6 +576,8 @@ align-items: center; */
   flex-wrap: wrap;
   padding-top: 54px;
   padding-left: 68px;
+  padding-bottom: 54px;
+  padding-right: 56px;
 
   /* outline: 2px solid violet; */
 }
@@ -625,14 +646,14 @@ align-items: center; */
   height: 20px;
   margin-right: 35px;
 }
-.icon-mark.top {
+/* .icon-mark.top {
 }
 
 .icon-mark.medium {
 }
 
 .icon-mark.end {
-}
+} */
 
 .teacher-text-top {
   display: block;
@@ -640,6 +661,7 @@ align-items: center; */
 
 .teacher-text-box {
   min-width: 650px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
   min-height: 310px;
 }
 .teacher-text-box > p {
@@ -653,6 +675,9 @@ align-items: center; */
 /* ========================---END teacher---======================= */
 
 /* ========================---guarantee---======================= */
+.guarantee .section-title {
+  text-align: center;
+}
 .guarantee-box {
   padding: 50px 112px 40px;
   border: 0;
@@ -687,8 +712,11 @@ align-items: center; */
 /* ========================---END guarantee---======================= */
 
 /* =========================---Feedback---====================== */
+.feedback .section-title {
+  text-align: center;
+}
 .feedback .container {
-  margin: 130px 211px;
+  margin: 130px auto;
 }
 .feedback-title {
   font-weight: 800;
@@ -713,7 +741,8 @@ align-items: center; */
 
 .feedback-top-center {
   width: 1090px;
-  height: 370px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  min-height: 370px;
   display: flex;
 }
 
@@ -728,6 +757,7 @@ align-items: center; */
 
 .feedback-top-center-box {
   width: 706px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
   min-height: 292px;
   /* outline: 2px solid blue; */
 }
@@ -745,7 +775,8 @@ align-items: center; */
 
 .feedback-bottom {
   width: 558px;
-  height: 54px;
+  /*фиксированный размер высоты не задаём в случае добавления текста он будет менятся*/
+  min-height: 54px;
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
@@ -788,7 +819,7 @@ align-items: center; */
 }
 .footer-logo-box {
   width: 128px;
-  height: 45px;
+  min-height: 45px;
   margin-right: 290px;
 }
 .footer-tel {
